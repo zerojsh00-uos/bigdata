@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      div {border : 5px solid #aaaaaa;
+        padding : 10px;
+        background-color:rgba(255,0,0,.5);
+      }
+      #id1 {height : 1000px; position : relative;}
+      #id1 > ul {position: absolute ; top:0 ; left:200px}
+      #id2 {position : absolute; top:100px ; left:300px;}
+      #id3 {position : fixed; top:100px ; left:200px;}
+      #id {color:rgb(0,0,255);}
+      .class {background-color: yellow;}
+      div + p.class {background-color: green;}
+      p.class {font-family:"Rosewood Std", Sans-serif; font-size : 50px; margin-left: 50px}
+    </style>
+  </head>
+  <body>
+    <div id = "id1">id01
+        <ul>
+          <li>menu01</li>
+          <li>menu02</li>
+        </ul>
+    </div>
+    <div id = "id2">id02</div>
+    <div id = "id3">id03</div>
+    <div id = "id">Content01</div>
+
+
+    <div class = "class">Content02</div>
+    <p class = "class">Content03 콘텐츠03</p>
+  </body>
+</html>
