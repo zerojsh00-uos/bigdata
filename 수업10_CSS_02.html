@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      div {border: 1px solid #aaaaaa; width:800px; height:200px; opacity:0.5; background-color: tomato;}
+      #div2 {width:200px; height:500px; float:left; background-color: lightblue;}
+      #div3 {width:300px; height:500px; float:right; background-color: yellow;}
+      #div4 {clear:both; background-color: blue;}
+      #div1 + div {clear:both; content:""; display:table;} /* div1이라는 id 다음에 나오는 div_ clearfix 트릭(?) */
+    </style>
+  </head>
+  <body>
+    <div id = "div1">Header</div>
+    <div>
+      <div id = "div2">Side</div>
+      <div id = "div3">Content</div>
+    </div>
+    <div id = "div4">Footer</div>
+
+  </body>
+</html>
